@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Current News</string>
+    <string name="select_item">selected item</string>
+    <string name="made_with_by_papaji">Made with ❤️ by PapaJi</string>
+</resources>

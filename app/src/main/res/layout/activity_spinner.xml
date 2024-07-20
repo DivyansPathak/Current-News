@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SpinnerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Head Lines"
+        android:textSize="@dimen/_30ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/merriweathersans_bold"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_50ssp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select the country"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="395dp"
+            android:layout_height="49dp"
+            android:layout_margin="@dimen/_9sdp"
+            android:hint="@string/select_item"
+            app:hintTextColor="@color/txtColor2"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="12dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="233dp"
+                android:inputType="none"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_40sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select the category"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_100sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="395dp"
+            android:layout_height="49dp"
+            android:layout_margin="@dimen/_9sdp"
+            android:hint="@string/select_item"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="12dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="233dp"
+                android:background="@color/white"
+                android:inputType="none"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/made_with_by_papaji"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:textColor="@color/black"
+/>
+
+
+
+
+
+</LinearLayout>
